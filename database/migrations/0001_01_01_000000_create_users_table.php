@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();
             $table->softDeletes();
+            $table->boolean('is_active')->default(1);
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
