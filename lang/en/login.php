@@ -10,5 +10,4 @@ return [
     'hide_password' => 'Hide password',
     'forgot_password' => 'Forgot your password?',
     'logOut' => 'Log Out',
-    'failed' => 'These credentials do not match our records.'
 ];

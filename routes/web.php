@@ -2,13 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::middleware('guest')->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('welcome');
 
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
+    Route::get('/login', function () {
+        return view('auth.login');
+    })->name('login');
+});
 
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])->group( function () {
     Route::group(['prefix' => 'app'], function () {

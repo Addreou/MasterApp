@@ -64,7 +64,7 @@ class FortifyServiceProvider extends ServiceProvider
             }
 
             throw ValidationException::withMessages([
-                'failed' => [__('login.failed')],
+                'failed' => [__('auth.failed')],
             ]);
         });
     }

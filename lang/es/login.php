@@ -10,5 +10,4 @@ return [
     'hide_password' => 'Ocultar contraseña',
     'forgot_password' => '¿Olvidaste tu contraseña?',
     'logOut' => 'Cerrar Sesión',
-    'failed' => 'Las credenciales no coiciden con nuestros registros.'
 ];
